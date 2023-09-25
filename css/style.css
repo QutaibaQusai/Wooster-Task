@@ -11,6 +11,7 @@
 
 body{
     width: 100%;
+    user-select: none;
 }
 header{
     width: 100%;
@@ -218,12 +219,67 @@ header nav .links ul li a:hover{
 }
 .vid{
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     overflow: hidden;
 }
 .vid video{
     width: 100%;
-    
     filter: grayscale(100%);
+}
+.portfolio{
+    width: 100%;
+    padding: 80px 0;
+}
+.portfolio .portfolio-container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.portfolio .portfolio-container h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    font-weight: 500;
+    color: #333;
+}
+.portfolio .portfolio-container h6{
+    text-transform: uppercase;
+    color: #777;
+    font-size: 12px;
+    font-weight: 500;
+}
+.portfolio .portfolio-container hr{
+    margin: 10px auto 50px auto;
+    width: 12%;   
+}
+.portfolio .portfolio-container p{
+    font-size: 14px;
+   color: #333;
+   text-transform: capitalize;
+}
+.portfolio-links{
+    margin-top: 50px;
+    
+}
+.portfolio-links ul{
+    list-style-type: none;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.portfolio-links ul li a{
+    text-transform: capitalize;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+.portfolio-links ul li a:hover{
+    background-color: #000;
+    color: #fff;
 
 }
